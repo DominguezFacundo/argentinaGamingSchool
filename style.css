@@ -169,8 +169,6 @@ footer {
 
 @media (max-width: 1023px) {
   * {
-    font-family: "montserrat";
-    color: #258843;
     font-size: 56.25%; /* 1rem = 9px */
   }
 
