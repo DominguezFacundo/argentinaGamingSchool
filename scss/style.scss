@@ -17,7 +17,8 @@ header {
   nav {
     display: flex;
     justify-content: space-evenly;
-    padding: 1rem;
+    align-items: center;
+    padding: 4rem;
     .logoImg {
       width: 5rem;
       height: 7rem;
@@ -25,20 +26,21 @@ header {
   }
 }
 
-.headerA {
+.pagesItem {
+  border-right: 0.1rem solid $accentColor;
+  &:last-child {
+    border: none;
+  }
+}
+
+.pagesLink {
   color: $primaryColor;
   font-size: $standardFontSize;
   text-decoration: none;
   margin-top: 0.5rem;
-  margin-right: 1rem;
-  padding: 0 2.5rem;
-  text-decoration: underline 0.1rem rgba(0, 0, 0, 0);
+  padding: 0 4rem;
+  text-decoration: underline 0.2rem rgba(0, 0, 0, 0);
   transition: text-decoration-color 300ms;
-  border-right: 0.1rem solid $accentColor;
-
-  &:last-child {
-    border: none;
-  }
 
   &:hover {
     color: $primaryColor;
@@ -47,26 +49,23 @@ header {
 }
 
 .logoImg,
-.links,
+.pages,
 .socials {
-  align-self: center;
-}
-
-.socials {
+  list-style: none;
   display: flex;
+  align-self: center;
 }
 
 .socialIcon {
   height: 5.5rem;
   width: 5.5rem;
-}
-
-.socialLink {
   @include easeTransition;
   &:hover {
     transform: scale(1.3);
+    background-color: #000;
   }
 }
+
 
 h1 {
   font-size: 6.4rem;
@@ -88,6 +87,24 @@ h3 {
 h4 {
   font-size: 1.6rem;
   color: $accentColor;
+}
+
+.wapIcon{
+  fill: white;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.5rem;
+  background-color: $primaryColor;
+  border-radius: 50%;
+  box-shadow: 0.2rem 0.2rem 1.5rem white;
+  position: fixed;
+  bottom: 2.5rem;
+  right : 3rem;
+  z-index: 10;
+
+  &:hover{
+    @include generalBoxShadow;
+  }
 }
 
 footer {
@@ -126,18 +143,13 @@ footer {
     grid-area: navBar;
   }
 
-  .links {
+  .pages, .socials {
     display: flex;
     flex-direction: column;
   }
 
-  .headerA {
+  .pagesItem {
     border: none;
-  }
-
-  .socials {
-    display: flex;
-    flex-direction: column;
   }
 
   footer {
@@ -156,7 +168,7 @@ footer {
 /* -------------------------------------------------------------------- Index CSS */
 
 #heroSection .container {
-  height: 50vh;
+  height: 60vh;
 }
 
 .heroImg {
@@ -195,9 +207,16 @@ footer {
 
 /* -------------------------------------------------------------- Institution CSS */
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: darkgray;
+}
+
 .carousel-item {
   height: 50rem;
-  background: #000;
+  background-color: #000;
 }
 
 .carousel-1 {
@@ -219,10 +238,6 @@ footer {
   margin-right: auto;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem;
-  border-radius: 1rem;
-  border: 0.5rem solid $accentColor;
-  border-top: 0;
-  border-bottom: 0;
   font-size: $standardFontSize;
   line-height: 2rem;
 }
@@ -239,7 +254,7 @@ footer {
 
 @media (min-width: 1024px) {
   .container.carouselContainer {
-    width: 50%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -286,17 +301,26 @@ footer {
   opacity: 0.6;
   cursor: not-allowed;
   letter-spacing: 1.5px;
-}
-
-.packSatelite,
-.packTryhard,
-.packPro {
-  border-radius: 4rem;
-  @include generalBoxShadow;
-}
-
-.cardsButton {
   margin-bottom: 2rem;
+}
+
+.packSatelite {
+  border-radius: 4rem;
+  @include packsBoxShadow;
+}
+
+.packTryhard {
+  @extend .packSatelite;
+  &:hover{
+    box-shadow: 0rem 0rem 1.5rem 1rem rgba(color(tryhard), $alpha: 1);
+  }
+}
+
+.packPro {
+  @extend .packSatelite;
+  &:hover{
+    box-shadow: 0rem 0rem 1.5rem 1rem rgba(color(pro), $alpha: 0.6);
+  }
 }
 
 /* ------------------------------------------------------------- End Packages CSS */

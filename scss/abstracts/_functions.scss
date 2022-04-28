@@ -1,0 +1,6 @@
+@import "./variables";
+@import "./maps";
+
+@function color($packColor) {
+    @return map-get($shadowColor, $packColor );
+}

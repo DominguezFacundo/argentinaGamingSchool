@@ -7,6 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- meta Keywords -->
+    <meta name="keywords" content="ESCUELA, SCHOOL, CURSOS, APRENDER, PRO, GAMES, ESPORTS, JAPON, AULAS, CLASSROOMS, PLAN, ESTUDIOS">
+
+    <!-- meta Description -->
+    <meta name="description" content="En esta pagina podrás conocer todo lo que la ARGENTINA GAMING SCHOOL puede brindar, tanto sus aulas como planes de estudio. AGS - Eleva tu juego">
+
     <!-- font link -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
 
@@ -25,29 +31,39 @@
     <title>AGS - INSTITUCIÓN</title>
 </head>
 
-<body>
+<body class="container-fluid">
 
     <!-- header Section -->
     <header class="navBar">
         <nav class="header">
-            <div class="logoImg">
-                <a href="../index.html"><img class=" logoImg" src="../assets/logo/logo.png" alt="logo"></a>
-            </div>
-            <div class="links">
-                <a class="headerA" href="../index.html">Home</a>
-                <a class="headerA" href="./institution.html">Institución</a>
-                <a class="headerA" href="./games.html">Juegos</a>
-                <a class="headerA" href="./packages.html">Paquetes a adquirir</a>
-                <a class="headerA" href="./contactUs.html">Contacto</a>
-            </div>
-            <div class="socials">
-                <a class="socialLink" href="https://www.instagram.com/esports_highschool/" target="_blank"><img
-                        src="../assets/socials/ig.svg" alt="Icono Instagram" class="socialIcon"></a>
-                <a class="socialLink" href="https://twitter.com/esports_hs_" target="_blank"><img
-                        src="../assets/socials/twitter.svg" alt="Icono Twitter" class="socialIcon"></a>
-                <a class="socialLink" href="https://www.youtube.com/channel/UCySGtxXJ1W-SqWLWw2nIwMw"
-                    target="_blank"><img src="../assets/socials/yt.svg" alt="Icono YouTube" class="socialIcon yt"></a>
-            </div>
+
+            <!-- img -->
+            <a aria-label="logo image index link" href="../index.html"><img class="logoImg" src="../assets/logo/logo.png" alt="logo"></a>
+
+            <!-- links UL -->
+            <ul class="pages">
+                <li class="pagesItem"><a class="pagesLink" href="../index.html">Home</a></li>
+                <li class="pagesItem"><a class="pagesLink" href="./institution.html">Institución</a></li>
+                <li class="pagesItem"><a class="pagesLink" href="./games.html">Juegos</a></li>
+                <li class="pagesItem"><a class="pagesLink" href="./packages.html">Paquetes</a></li>
+                <li class="pagesItem"><a class="pagesLink" href="./contactUs.html">Contacto</a></li>
+            </ul>
+
+            <!-- social Network UL -->
+            <ul class="socials">
+                <li class="socialItem"><a class="socialLink" href="https://www.instagram.com/esports_highschool/"
+                        target="_blank"><img src="../assets/socials/ig.svg" alt="Icono Instagram"
+                            class="socialIcon ig"></a>
+                </li>
+                <li class="socialItem"><a class="socialLink" href="https://twitter.com/esports_hs_" target="_blank"><img
+                            src="../assets/socials/twitter.svg" alt="Icono twitter" class="socialIcon tw"></a>
+                </li>
+                <li class="socialItem"><a class="socialLink"
+                        href="https://www.youtube.com/channel/UCySGtxXJ1W-SqWLWw2nIwMw" target="_blank"><img
+                            src="../assets/socials/yt.svg" alt="Icono YouTube" class="socialIcon yt"></a>
+                </li>
+            </ul>
+
         </nav>
     </header>
 
@@ -69,20 +85,20 @@
                     <div id="myCarousel" class="carousel slide carousel-Fade" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0"
-                                class="active"></button>
-                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+                                class="active" aria-label="carousel Slider"></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="carousel Slider"></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="carousel Slider"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="active carousel-item carousel-1" data-bs-interval="3000"></div>
                             <div class="carousel-item carousel-2" data-bs-interval="3000"></div>
                             <div class="carousel-item carousel-3" data-bs-interval="3000"></div>
                         </div>
-                        <button type="button" class="carousel-control-prev" data-bs-target="#myCarousel"
+                        <button aria-label="carousel previous arrow container" type="button" class="carousel-control-prev" data-bs-target="#myCarousel"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         </button>
-                        <button type="button" class="carousel-control-next" data-bs-target="#myCarousel"
+                        <button aria-label="carousel next arrow container" type="button" class="carousel-control-next" data-bs-target="#myCarousel"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         </button>
@@ -91,13 +107,15 @@
             </div>
         </div>
         <div class="row">
-            
+
             <!-- aulas Description -->
             <div class="col-12">
                 <p class="aulasText text-center">
                     Nuestras aulas cuentan con tecnología de punta para poder brindarle a nuestros alumnos todo
-                    lo que necesitan para que su único enfoque sea la practica. Creamos un ambiente donde el alumno sienta
-                    que no le falta nada para poder cumplir sus objetivos, ya sea tanto en el gaming como en las materias
+                    lo que necesitan para que su único enfoque sea la practica. Creamos un ambiente donde el alumno
+                    sienta
+                    que no le falta nada para poder cumplir sus objetivos, ya sea tanto en el gaming como en las
+                    materias
                     satélites en las cuales se enfoca nuestro programa de estudio.
                 </p>
             </div>
@@ -204,6 +222,9 @@
         </div>
     </section>
 
+    <!-- contact via WhatsApp  -->
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=541122546723&text=Hola%20Facu!%20Como%20va%20el%20curso?"><svg viewBox="0 0 32 32" class="wapIcon"><path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></svg></a>
+
     <!-- footer  -->
     <footer class="footer">
         <h4>Todos los derechos reservados</h4>
@@ -215,7 +236,7 @@
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+        </script>
 
     <!-- Animation library Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

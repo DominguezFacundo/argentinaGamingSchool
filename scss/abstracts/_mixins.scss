@@ -1,11 +1,22 @@
+@import "./variables";
+@import "./functions";
+
 @mixin easeTransition {
   transition: all 0.3s ease-in-out;
 }
 
 @mixin generalBoxShadow {
-  box-shadow: 0rem 0rem 1.5rem 0.5rem rgba($color: $primaryColor, $alpha: 0.8);
+  box-shadow: 0rem 0rem 1.5rem 0.5rem rgba($primaryColor, $alpha: 0.8);
   @include easeTransition;
   &:hover {
-    box-shadow: 0rem 0rem 1.5rem 1rem rgba($color: $accentColor, $alpha: 0.6);
+    box-shadow: 0rem 0rem 1.5rem 1rem rgba($accentColor, $alpha: 0.6);
+  }
+}
+
+@mixin packsBoxShadow {
+  box-shadow: 0rem 0rem 1.5rem 0.5rem rgba($accentColor, $alpha: 0.8);
+  @include easeTransition;
+  &:hover {
+    box-shadow: 0rem 0rem 1.5rem 1rem rgba(color(satelite), $alpha: 0.6);
   }
 }
