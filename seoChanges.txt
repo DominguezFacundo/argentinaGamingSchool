@@ -1,0 +1,41 @@
+Si bien todos los cambios están marcados con comments, los realizados fueron los siguientes :
+
+Index:
+
+    meta Keywords:
+    "ESCUELA, SCHOOL, CURSOS, APRENDER, PRO, JUEGOS, GAMES, ESPORTS, SPORTS, JAPON"
+
+    meta Description:
+    "Pagina de inicio | Pagina oficial de ARGENTINA GAMING SCHOOL, la primer escuela de e-sports del continente. AGS - Eleva tu juego"
+
+Institución:
+
+    meta Keywords:
+    "ESCUELA, SCHOOL, CURSOS, APRENDER, PRO, GAMES, ESPORTS, JAPON, AULAS, CLASSROOMS, PLAN, ESTUDIOS"
+
+    meta Description:
+    "En esta pagina podrás conocer todo lo que la ARGENTINA GAMING SCHOOL puede brindar, tanto sus aulas como planes de estudio. AGS - Eleva tu juego"
+
+Games:
+
+    meta Keywords:
+    "ESCUELA, SCHOOL, PRO, JUEGOS, GAMES, ESPORTS, SPORTS, JAPON, MOBA, RTS, FIGHTING, FPS, CS, 1.6, GO, LOL, DOTA, STARCRAFT"
+
+    meta Description:
+    "En esta pagina podrás ver algunos de los juegos en los que ARGENTINA GAMING SCHOOL dará clases. AGS - Eleva tu juego"
+
+Packages: 
+
+    meta Keywords:
+    "ESCUELA, SCHOOL, CURSOS, APRENDER, JUEGOS, PRECIO, PACKS, PAQUETES, INSCRIPCIÓN, CUOTA, BECA, JAPON"
+
+    meta Description:
+    "En esta pagina podrás ver todos los paquetes a adquirir para formar parte de la ARGENTINA GAMING SCHOOL inscribete ya!. AGS - Eleva tu juego"
+
+COntactUs: 
+
+    meta Keywords:
+    "ESCUELA, SCHOOL, CURSOS, APRENDER, PRO, JUEGOS, GAMES, ESPORTS, SPORTS, JAPON, CONTACTO"
+
+    meta Description:
+    "En esta pagina podrás contactarte con ARGENTINA GAMING SCHOOL, por si desea enviarnos alguna consulta o sugerencia. AGS - Eleva tu juego"
