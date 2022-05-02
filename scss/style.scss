@@ -66,29 +66,6 @@ header {
   }
 }
 
-
-h1 {
-  font-size: 6.4rem;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  font-size: 3.2rem;
-  text-align: center;
-}
-
-h3 {
-  font-size: 2.4rem;
-  color: $accentColor;
-}
-
-h4 {
-  font-size: 1.6rem;
-  color: $accentColor;
-}
-
 .wapIcon{
   fill: white;
   width: 5rem;
@@ -182,7 +159,8 @@ footer {
 
 .heroText {
   font-size: $standardFontSize;
-  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  color: rgba($accentColor, 0.7);
 }
 
 .row.subRow {
@@ -201,8 +179,19 @@ footer {
   background-color: rgba(0, 0, 0, 0.459);
   font-size: $standardFontSize;
   line-height: 4rem;
+  text-align: center;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  #{&}Link {
+    text-decoration: none;
+  }
 }
 
+@media (min-width: 1024px) {
+  .subText {
+    margin-top: 0rem;
+  }
+}
 /* ---------------------------------------------------------------- End Index CSS */
 
 /* -------------------------------------------------------------- Institution CSS */
@@ -386,7 +375,7 @@ textarea {
   border-top: 0;
   border-bottom: 0;
   padding: 2rem;
-  background-color: rgba($color: $primaryColor, $alpha: 0.5);
+  background-color: rgba($primaryColor, $alpha: 0.5);
 }
 
 .buttonRow {
