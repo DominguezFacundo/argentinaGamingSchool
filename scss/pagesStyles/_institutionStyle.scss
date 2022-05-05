@@ -1,0 +1,57 @@
+/* -------------------------------------------------------------- Institution CSS */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: darkgray;
+}
+
+.carousel-item {
+  height: 50rem;
+  background-color: #000;
+}
+
+.carousel-1 {
+  background: url("../assets/institution1.jpg") no-repeat center center/cover;
+}
+
+.carousel-2 {
+  background: url("../assets/institution2.jpg") no-repeat center center/cover;
+}
+
+.carousel-3 {
+  background: url("../assets/institution3.jpg") no-repeat center center/cover;
+}
+
+.aulasText {
+  max-width: 80%;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  font-size: $standardFontSize;
+  line-height: 2rem;
+}
+
+.row.upper,
+.row.lower {
+  padding: 6rem;
+}
+
+.bigSquareDescription,
+.smallSquareDescription {
+  font-size: $standardFontSize;
+}
+
+@media (min-width: 1024px) {
+  .container.carouselContainer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ---------------------------------------------------------- End Institution CSS */

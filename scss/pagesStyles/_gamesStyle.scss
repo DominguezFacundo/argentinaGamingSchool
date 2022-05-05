@@ -1,0 +1,19 @@
+/* -------------------------------------------------------------------- Games CSS */
+
+.gamingTitle {
+  font-weight: bold;
+  margin-top: 4rem;
+}
+.video {
+  max-width: 100%;
+  opacity: 0.8;
+  margin: 1.5rem 0rem;
+  @include generalBoxShadow;
+}
+
+.videoDescription {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: $standardFontSize;
+}
+
+/* ---------------------------------------------------------------- End Games CSS */

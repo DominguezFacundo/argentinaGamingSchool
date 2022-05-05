@@ -1,0 +1,16 @@
+.notFoundContainer {
+  margin-top: 17rem;
+  p {
+    color: $primaryColor;
+    font-size: $standardFontSize;
+    font-weight: bold;
+  }
+
+  .button404 {
+    background-color: #0d5823;
+    font-size: $standardFontSize;
+    color: $accentColor;
+    border-radius: 1rem;
+    @include generalBoxShadow;
+  }
+}

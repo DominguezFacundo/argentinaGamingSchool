@@ -1,0 +1,77 @@
+/* ----------------------------------------------------------------- Packages CSS */
+.packagesLink {
+  text-decoration: none;
+}
+
+.cardsText {
+  color: $accentColor;
+  font-size: $standardFontSize;
+}
+
+
+
+.cardsButton {
+  background-color: rgb(120, 120, 120);
+  border-radius: 1rem;
+  padding: 1rem;
+  letter-spacing: 1.5px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.satelite {
+  @extend .cardsButton;
+  &:hover {
+    background-color: rgb(125, 0, 0);
+  }
+}
+
+.tryhard {
+  @extend .cardsButton;
+  &:hover {
+    background-color: $primaryColor;
+  }
+}
+
+
+.pro {
+  @extend .cardsButton;
+  &:hover {
+    background-color: rgb(62, 62, 252);
+  }
+}
+
+
+
+.packSatelite {
+  border-radius: 4rem;
+  &:hover {
+    .sateliteText {
+      color: red;
+    }
+  }
+  @include packsBoxShadow;
+  
+}
+
+.packTryhard {
+  @extend .packSatelite;
+  &:hover {
+    .tryhardText {
+      color: $primaryColor;
+    }
+    box-shadow: 0rem 0rem 1.5rem 1rem rgba(color(tryhard), $alpha: 1);
+  }
+}
+
+.packPro {
+  @extend .packSatelite;
+  &:hover {
+    .proText {
+      color: rgb(86, 86, 253);
+    }
+    box-shadow: 0rem 0rem 1.5rem 1rem rgba(color(pro), $alpha: 0.6);
+  }
+}
+
+/* ------------------------------------------------------------- End Packages CSS */

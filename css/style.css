@@ -123,7 +123,8 @@ footer {
     font-size: 56.25%; }
   .navBar {
     grid-area: navBar; }
-  .pages, .socials {
+  .pages,
+  .socials {
     display: flex;
     flex-direction: column; }
   .pagesItem {
@@ -181,7 +182,8 @@ footer {
 
 /* ---------------------------------------------------------------- End Index CSS */
 /* -------------------------------------------------------------- Institution CSS */
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -249,31 +251,44 @@ footer {
   text-decoration: none; }
 
 .cardsText {
+  color: white;
   font-size: 2rem; }
 
-.cardsButton {
-  border: 0.3rem solid white;
+.cardsButton, .satelite, .tryhard, .pro {
+  background-color: #787878;
   border-radius: 1rem;
-  border-top: 0;
-  border-bottom: 0;
   padding: 1rem;
-  opacity: 0.6;
-  cursor: not-allowed;
   letter-spacing: 1.5px;
+  margin-top: 1rem;
   margin-bottom: 2rem; }
+
+.satelite:hover {
+  background-color: #7d0000; }
+
+.tryhard:hover {
+  background-color: #258843; }
+
+.pro:hover {
+  background-color: #3e3efc; }
 
 .packSatelite, .packTryhard, .packPro {
   border-radius: 4rem;
   box-shadow: 0rem 0rem 1.5rem 0.5rem rgba(255, 255, 255, 0.8);
   transition: all 0.3s ease-in-out; }
+  .packSatelite:hover .sateliteText, .packTryhard:hover .sateliteText, .packPro:hover .sateliteText {
+    color: red; }
   .packSatelite:hover, .packTryhard:hover, .packPro:hover {
     box-shadow: 0rem 0rem 1.5rem 1rem rgba(255, 0, 0, 0.6); }
 
 .packTryhard:hover {
   box-shadow: 0rem 0rem 1.5rem 1rem green; }
+  .packTryhard:hover .tryhardText {
+    color: #258843; }
 
 .packPro:hover {
   box-shadow: 0rem 0rem 1.5rem 1rem rgba(0, 0, 255, 0.6); }
+  .packPro:hover .proText {
+    color: #5656fd; }
 
 /* ------------------------------------------------------------- End Packages CSS */
 /* ------------------------------------------------------Contact Grid Declaration */
@@ -339,6 +354,36 @@ textarea {
   height: 5rem;
   width: 20%; }
   .contactButton:hover {
-    box-shadow: 0 0.5rem 1.5rem #0c580c; }
+    box-shadow: 0rem 0rem 1.5rem 0.5rem rgba(37, 136, 67, 0.8);
+    transition: all 0.3s ease-in-out; }
+    .contactButton:hover:hover {
+      box-shadow: 0rem 0rem 1.5rem 1rem rgba(255, 255, 255, 0.6); }
+
+.modal-content {
+  border-radius: 2rem;
+  align-items: center; }
+  .modal-content .modal-header h3 {
+    color: #258843;
+    font-weight: bold; }
+  .modal-content .closeButton {
+    background-color: #0d5823;
+    font-size: 2rem;
+    color: white;
+    border-radius: 1rem; }
 
 /* ----------------------------------------------------------- End Contact Us CSS */
+.notFoundContainer {
+  margin-top: 17rem; }
+  .notFoundContainer p {
+    color: #258843;
+    font-size: 2rem;
+    font-weight: bold; }
+  .notFoundContainer .button404 {
+    background-color: #0d5823;
+    font-size: 2rem;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1.5rem 0.5rem rgba(37, 136, 67, 0.8);
+    transition: all 0.3s ease-in-out; }
+    .notFoundContainer .button404:hover {
+      box-shadow: 0rem 0rem 1.5rem 1rem rgba(255, 255, 255, 0.6); }

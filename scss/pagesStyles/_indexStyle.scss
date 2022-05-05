@@ -1,0 +1,51 @@
+/* -------------------------------------------------------------------- Index CSS */
+
+#heroSection .container {
+  height: 60vh;
+}
+
+.heroImg {
+  border-radius: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../assets/heroImg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.heroText {
+  font-size: $standardFontSize;
+  font-weight: bold;
+  color: rgba($accentColor, 0.7);
+}
+
+.row.subRow {
+  align-items: center;
+  padding: 3rem;
+}
+
+.subImg {
+  max-width: 100%;
+  opacity: 0.8;
+  border-radius: 2rem;
+  @include generalBoxShadow;
+}
+
+.subText {
+  background-color: rgba(0, 0, 0, 0.459);
+  font-size: $standardFontSize;
+  line-height: 4rem;
+  text-align: center;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  #{&}Link {
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .subText {
+    margin-top: 0rem;
+  }
+}
+/* ---------------------------------------------------------------- End Index CSS */

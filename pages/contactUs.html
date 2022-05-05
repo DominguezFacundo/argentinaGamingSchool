@@ -97,8 +97,7 @@
                 <!-- email input -->
                 <div class="col-12 col-lg-8 mb-3">
                     <label for="email" class="form-label">Email:</label>
-                    <input type="email" class="form-control form-control-lg" id="email" placeholder="Ingrese su Email"
-                        required>
+                    <input type="email" class="form-control form-control-lg" id="email" placeholder="Ingrese su Email" required>
                 </div>
 
                 <!-- phone input -->
@@ -116,10 +115,28 @@
 
                 <!-- Button -->
                 <div class="buttonRow">
-                    <button type="button" class="btn btn-light contactButton">Enviar</button>
-                </div>
-            </form>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success contactButton" data-bs-toggle="modal" data-bs-target="#messageModal">
+                        Enviar!
+                    </button>
+                </div>    
+                    <!-- Modal -->
+                    <div class="modal fade text-center" id="messageModal" tabindex="-1" aria-labelledby="messageSentModal"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content modalContainer">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="messageSentModal">Gracias por comunicarse con nosotros!</h3>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary closeButton"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+            </form>
         </section>
     </main>
 
