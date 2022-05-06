@@ -1,4 +1,12 @@
 /* ----------------------------------------------------------------- Packages CSS */
+
+.card {
+  background-color: rgba(0, 0, 0, 0);
+  .card-title {
+    font-weight: bold;
+  }
+}
+
 .packagesLink {
   text-decoration: none;
 }
@@ -7,8 +15,6 @@
   color: $accentColor;
   font-size: $standardFontSize;
 }
-
-
 
 .cardsButton {
   background-color: rgb(120, 120, 120);
@@ -33,15 +39,12 @@
   }
 }
 
-
 .pro {
   @extend .cardsButton;
   &:hover {
     background-color: rgb(62, 62, 252);
   }
 }
-
-
 
 .packSatelite {
   border-radius: 4rem;
@@ -51,7 +54,6 @@
     }
   }
   @include packsBoxShadow;
-  
 }
 
 .packTryhard {
@@ -71,6 +73,12 @@
       color: rgb(86, 86, 253);
     }
     box-shadow: 0rem 0rem 1.5rem 1rem rgba(color(pro), $alpha: 0.6);
+  }
+}
+
+@media (min-width: 1199px) {
+  .card {
+    height: 90%;
   }
 }
 

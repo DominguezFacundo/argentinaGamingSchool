@@ -247,6 +247,11 @@ footer {
 
 /* ---------------------------------------------------------------- End Games CSS */
 /* ----------------------------------------------------------------- Packages CSS */
+.card {
+  background-color: rgba(0, 0, 0, 0); }
+  .card .card-title {
+    font-weight: bold; }
+
 .packagesLink {
   text-decoration: none; }
 
@@ -289,6 +294,10 @@ footer {
   box-shadow: 0rem 0rem 1.5rem 1rem rgba(0, 0, 255, 0.6); }
   .packPro:hover .proText {
     color: #5656fd; }
+
+@media (min-width: 1199px) {
+  .card {
+    height: 90%; } }
 
 /* ------------------------------------------------------------- End Packages CSS */
 /* ------------------------------------------------------Contact Grid Declaration */

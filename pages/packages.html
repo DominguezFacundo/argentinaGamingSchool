@@ -30,7 +30,7 @@
     <title>AGS - PACKS</title>
 </head>
 
-<body class="container-fluid">
+<body class="packsBody container-fluid">
 
     <!-- header Section -->
     <header class="navBar">
@@ -67,7 +67,7 @@
         </nav>
     </header>
 
-    <!-- main Section -->
+    <!-- packs title -->
     <div class="row">
         <div class="col-12">
             <div class="title">
@@ -76,56 +76,66 @@
         </div>
     </div>
 
-    <main class="packContainer text-center">
+<!-- main section  -->
+    <main class="packsContainer">
         <div class="row pakcsRow">
-            <div class="col-12 col-lg-4">
-                <!-- pack Satelite -->
-                <section class="packSatelite p-5 m-5">
-                    <h3>Pack Satélite</h3>
-                    <p class="cardsText sateliteText">
-                        Pack orientado a quienes quieren mejorar o aprender de cero los juegos mencionados en nuestro
-                        apartado <a aria-label="link to games page" class="packagesLink" href="./games.html"><strong
-                                class="boldSpan">juegos</strong></a>,
-                        ampliando sus
-                        conocimientos para llevar a cabo una mejor tarea ya sea como streamer, periodista de e-sport,
-                        analista,
-                        coaching, entre otras.
-                    </p>
-                    <a href="./notFound.html"><button class="cardsButton satelite"><strong class="boldSpan">Adquirir Pack!</strong></button></a>
-                    
-                </section>
-            </div>
-            <div class="col-12 col-lg-4">
-                <!-- pack Tryhard -->
-                <section class="packTryhard p-5 m-5">
-                    <h3>Pack Tryhard</h3>
-                    <p class="cardsText tryhardText">
-                        Este pack cuenta con el entrenamiento tanto de videojuegos optimo, asi como físico y mental para
-                        mantener a
-                        los estudiantes siempre enfocados y en excelente estado. Dedicado a quienes aspiran participar
-                        en
-                        torneos o
-                        convertirse en profesionales.
-                    </p>
-                    <a href="./notFound.html"><button class="cardsButton tryhard"><strong class="boldSpan">Adquirir Pack!</strong></button></a>
-                </section>
-            </div>
-            <div class="col-12 col-lg-4">
-                <!-- pack PRO -->
-                <section class="packPro p-5 m-5">
-                    <h3>Pack PRO</h3>
-                    <p class="cardsText proText">
-                        El pack tryhard más la estadía en el colegio en modalidad pupilo y para mejor uso del
-                        programa
-                        de estudios detallado <a aria-label="link to studyProgram section" class="packagesLink"
-                            href="./institution.html#studyProgram"><strong class="boldSpan">aquí</strong></a> asi como
-                        también beneficios tales como ser llevados a
-                        eventos y
-                        experimentar en primera mano lo que es ser un pro gamer.
-                    </p>
-                    <a href="./notFound.html"><button class="cardsButton pro"><strong class="boldSpan">Adquirir Pack!</strong></button></a>
-                </section>
-            </div>
+
+            <!-- pack satelite -->
+            <section class="col-12 col-xl-4">
+                <div class="card packSatelite p-3 m-5">
+                    <div class="card-body text-center">
+                        <h3 class="card-title mt-3 mb-4">Pack Satélite</h3>
+                        <p class="cardsText sateliteText p-5">
+                            Pack orientado a quienes quieren mejorar o aprender de cero los juegos mencionados en
+                            nuestro
+                            apartado <a aria-label="link to games page" class="packagesLink" href="./games.html"><strong
+                                    class="boldSpan">juegos</strong></a>,
+                            ampliando sus conocimientos para llevar a cabo una mejor tarea ya sea como streamer, periodista de
+                            e-sport, analista, coaching, entre otras.
+                        </p>
+                        <a href="./notFound.html"><button class="cardsButton satelite"><strong class="boldSpan">Adquirir
+                                    Pack!</strong></button></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- pack tryhard -->
+            <section class="col-12 col-xl-4">
+                <div class="card packTryhard p-3 m-5">
+                    <div class="card-body text-center">
+                        <h3 class="card-title mt-3 mb-4">Pack Tryhard</h3>
+                        <p class="cardsText tryhardText p-5">
+                            Este pack cuenta con el entrenamiento tanto de videojuegos optimo, como también físico y mental
+                            para mantener a los estudiantes siempre enfocados y en excelente estado. Dedicado a quienes aspiran a
+                            participar en torneos o convertirse en profesionales.
+                        </p>
+                        <a href="./notFound.html"><button class="cardsButton tryhard"><strong class="boldSpan">Adquirir
+                                    Pack!</strong></button></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- pack pro -->
+            <section class="col-12 col-xl-4">
+                <div class="card packPro p-3 m-5">
+                    <div class="card-body text-center">
+                        <h3 class="card-title mt-3 mb-4">Pack PRO</h3>
+                        <p class="cardsText proText p-5">
+                            El pack tryhard más la estadía en el colegio en modalidad pupilo y para mejor uso del
+                            programa
+                            de estudios detallado <a aria-label="link to studyProgram section" class="packagesLink"
+                                href="./institution.html#studyProgram"><strong class="boldSpan">aquí</strong></a> asi
+                            como
+                            también beneficios tales como ser llevados a
+                            eventos y
+                            experimentar en primera mano lo que es ser un pro gamer.
+                        </p>
+                        <a href="./notFound.html"><button class="cardsButton pro"><strong class="boldSpan">Adquirir
+                                    Pack!</strong></button></a>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </main>
 
@@ -150,7 +160,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
-
 </body>
 
 </html>
