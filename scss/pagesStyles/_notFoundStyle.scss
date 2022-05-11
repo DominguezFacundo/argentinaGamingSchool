@@ -1,16 +1,24 @@
-.notFoundContainer {
-  margin-top: 17rem;
-  p {
-    color: $primaryColor;
-    font-size: $standardFontSize;
-    font-weight: bold;
+  .notFoundBody {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .notFoundContainer {
+      p {
+        color: $primaryColor;
+        font-size: $standardFontSize;
+        font-weight: bold;
+        margin-bottom: 3rem;
+      }
+  
+      .button404 {
+        background-color: #0d5823;
+        font-size: $standardFontSize;
+        color: $accentColor;
+        border-radius: 1rem;
+        @include generalBoxShadow;
+      }
+    }
   }
+  
 
-  .button404 {
-    background-color: #0d5823;
-    font-size: $standardFontSize;
-    color: $accentColor;
-    border-radius: 1rem;
-    @include generalBoxShadow;
-  }
-}
+

@@ -53,6 +53,18 @@
   color: white;
 }
 
+@media (max-width: 1199px) {
+  .gtSquare {
+    margin-bottom: 7rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .botSquares {
+    margin-bottom: 7rem;
+  }
+}
+
 .row.upper,
 .row.lower {
   padding: 6rem;

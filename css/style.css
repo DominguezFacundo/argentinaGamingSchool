@@ -262,6 +262,14 @@ header {
   font-weight: bold;
   color: white; }
 
+@media (max-width: 1199px) {
+  .gtSquare {
+    margin-bottom: 7rem; } }
+
+@media (max-width: 767px) {
+  .botSquares {
+    margin-bottom: 7rem; } }
+
 .row.upper,
 .row.lower {
   padding: 6rem; }
@@ -431,18 +439,21 @@ textarea {
     border-radius: 1rem; }
 
 /* ----------------------------------------------------------- End Contact Us CSS */
-.notFoundContainer {
-  margin-top: 17rem; }
-  .notFoundContainer p {
+.notFoundBody {
+  height: 100vh;
+  justify-content: center;
+  align-items: center; }
+  .notFoundBody .notFoundContainer p {
     color: #258843;
     font-size: 2rem;
-    font-weight: bold; }
-  .notFoundContainer .button404 {
+    font-weight: bold;
+    margin-bottom: 3rem; }
+  .notFoundBody .notFoundContainer .button404 {
     background-color: #0d5823;
     font-size: 2rem;
     color: white;
     border-radius: 1rem;
     box-shadow: 0rem 0rem 1.5rem 0.5rem rgba(37, 136, 67, 0.8);
     transition: all 0.3s ease-in-out; }
-    .notFoundContainer .button404:hover {
+    .notFoundBody .notFoundContainer .button404:hover {
       box-shadow: 0rem 0rem 1.5rem 1rem rgba(255, 255, 255, 0.6); }
