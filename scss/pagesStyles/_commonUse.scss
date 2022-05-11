@@ -28,6 +28,38 @@ header {
   }
 }
 
+
+
+.navbar-toggler {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-width: 0.2rem;
+  border-color: $primaryColor;
+  #{&}-icon {
+      background-color: $primaryColor;
+  }
+}
+
+.leftArrow {
+    height: 2rem;
+    width: 1.5rem;
+}
+
+  
+
+.offcanvas-header {
+  background-color: black;
+}
+.offcanvas-body {
+  height: 100vh;
+  background-image: url(../assets/bgImg.svg);
+}
+
+.offcanvasFooter {
+  position: fixed;
+  bottom: 0;
+}
+
 .pagesLink {
   color: $primaryColor;
   font-size: $standardFontSize;
@@ -79,7 +111,7 @@ header {
   }
 }
 
-footer {
+.footer {
   display: flex;
   padding: 1rem;
   font-size: 1.6rem;
@@ -106,19 +138,34 @@ footer {
   margin-bottom: 5rem;
 }
 
+@media (min-width: 1200px) {
+  .navbar-toggler, .offcanvas {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .pages {
+    display: none;
+  }
+  .pagesItem {
+    border: none;
+  }
+
+  .socialItem {
+    margin: 0 3rem 0 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .socialItem {
+    margin: 0;
+  }
+}
+
 @media (max-width: 1023px) {
   * {
     font-size: $remIs9px;
-  }
-
-  .navBar {
-    grid-area: navBar;
-  }
-
-  .pages,
-  .socials {
-    display: flex;
-    flex-direction: column;
   }
 
   .pagesItem {

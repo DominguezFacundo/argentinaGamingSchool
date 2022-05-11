@@ -50,6 +50,29 @@ header {
   .pagesItem:last-child {
     border: none; }
 
+.navbar-toggler {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-width: 0.2rem;
+  border-color: #258843; }
+  .navbar-toggler .navbar-toggler-icon {
+    background-color: #258843; }
+
+.leftArrow {
+  height: 2rem;
+  width: 1.5rem; }
+
+.offcanvas-header {
+  background-color: black; }
+
+.offcanvas-body {
+  height: 100vh;
+  background-image: url(../assets/bgImg.svg); }
+
+.offcanvasFooter {
+  position: fixed;
+  bottom: 0; }
+
 .pagesLink {
   color: #258843;
   font-size: 2rem;
@@ -95,7 +118,7 @@ header {
     .wapIcon:hover:hover {
       box-shadow: 0rem 0rem 1.5rem 1rem rgba(255, 255, 255, 0.6); }
 
-footer {
+.footer {
   display: flex;
   padding: 1rem;
   font-size: 1.6rem;
@@ -118,15 +141,25 @@ footer {
   margin-top: 5rem;
   margin-bottom: 5rem; }
 
+@media (min-width: 1200px) {
+  .navbar-toggler, .offcanvas {
+    display: none; } }
+
+@media (max-width: 1199px) {
+  .pages {
+    display: none; }
+  .pagesItem {
+    border: none; }
+  .socialItem {
+    margin: 0 3rem 0 3rem; } }
+
+@media (max-width: 576px) {
+  .socialItem {
+    margin: 0; } }
+
 @media (max-width: 1023px) {
   * {
     font-size: 56.25%; }
-  .navBar {
-    grid-area: navBar; }
-  .pages,
-  .socials {
-    display: flex;
-    flex-direction: column; }
   .pagesItem {
     border: none; }
   footer {
@@ -211,6 +244,26 @@ footer {
   padding: 2rem;
   font-size: 2rem;
   line-height: 2rem; }
+  .aulasText:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    /* This will center the border. */
+    width: 50%;
+    /* Change this to whatever width you want. */
+    padding-top: 20px;
+    /* This creates some space between the element and the border. */
+    border-bottom: 0.2rem solid white;
+    /* This creates the border. Replace black with whatever color you want. */ }
+
+#studyProgram {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.programTitle, .programH3 {
+  font-weight: bold;
+  color: white; }
 
 .row.upper,
 .row.lower {
