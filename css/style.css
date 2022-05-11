@@ -203,11 +203,14 @@ header {
   background-color: rgba(0, 0, 0, 0.459);
   font-size: 2rem;
   line-height: 4rem;
-  text-align: center;
   margin-left: 5rem;
   margin-top: 5rem; }
   .subText .subTextLink {
     text-decoration: none; }
+
+@media (max-width: 992px) {
+  .subText {
+    margin-left: 0rem; } }
 
 @media (min-width: 1024px) {
   .subText {

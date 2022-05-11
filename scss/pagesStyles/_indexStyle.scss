@@ -35,11 +35,16 @@
   background-color: rgba(0, 0, 0, 0.459);
   font-size: $standardFontSize;
   line-height: 4rem;
-  text-align: center;
   margin-left: 5rem;
   margin-top: 5rem;
   #{&}Link {
     text-decoration: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .subText {
+    margin-left: 0rem;
   }
 }
 
